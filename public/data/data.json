@@ -1,0 +1,6 @@
+[
+  {"base":"EUR","rates":{"EUR":1,"USD":4.455866,"GBP":75.66666,"DIN":124.069546}},
+  {"base":"USD","rates":{"EUR":2.333,"USD":1,"GBP":94.947671,"DIN":100.22}},
+  {"base":"GBP","rates":{"EUR":5.43,"USD":9.947671,"GBP":1,"DIN":33.069}},
+  {"base":"DIN","rates":{"EUR":3.22,"USD":94.947671,"GBP":55.00, "DIN":1}}
+]

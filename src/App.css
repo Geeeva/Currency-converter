@@ -1,38 +1,88 @@
-.App {
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  border-top: unset;
+  border-left: unset;
+  border-right: unset;
+  border-bottom: #929292 1px solid;
+  width: 100%;
+}
+.converter-wrapper{
+  padding-top: 10%;
+  height: 100vh;
+}
+.title-wrapper{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-wrapper{
+  margin-top: 30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.select-wrapper{
+  margin-top: 50px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-end;
+}
+.select-wrapper select{
+  border: unset;
+  background-color: #bababa;
+  color: #000;
+  width: 200px;
+  padding: 5px 5px;
+}
+.button-wrapper{
+  margin-top: 50px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.button-wrapper button{
+  background-color: #1d5d90;
+  padding: 5px 25px;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+}
+.calculated-amount{
+  margin-top: 50px;
+}
+.calculated-amount{
+  color: #1d5d90;
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 675px) {
+  .button-wrapper{
+    justify-content: center;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  .select-wrapper .row{
+    width: 100%;
+  }
+  .select-wrapper select{
+    width: 100%;
+  }
+  .select-wrapper{
+    justify-content: center
+  }
+  .select-wrapper .col-md-6{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .select-wrapper {
+    margin-top: 30px;
+  }
+  .button-wrapper {
+    margin-top: 40px;
+  }
+  .calculated-amount{
+    margin-top: 30px;
+    text-align: center;
   }
 }

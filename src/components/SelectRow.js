@@ -1,6 +1,5 @@
-import React  from "react";
-const CurrencyToRow = (props) => {
-    const {currencyOptions, selectedCurrency, onChangeCurrency} = props;
+const SelectRow = (props) => {
+    const {currencyOptions, selectedCurrency, onChangeCurrency} = props
 
     return(
         <div>
@@ -12,4 +11,4 @@ const CurrencyToRow = (props) => {
         </div>
     )
 }
-export default CurrencyToRow;
+export default SelectRow;
